@@ -53,7 +53,7 @@ async def download_and_send(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if filename.endswith(('.mp4', '.mov', '.m4v')):
             await update.message.reply_video(
                 video=open(filename, 'rb'), 
-                caption="你要的東西"
+                caption="柒頭睇野啦!"
             )
         else:
             await update.message.reply_photo(
